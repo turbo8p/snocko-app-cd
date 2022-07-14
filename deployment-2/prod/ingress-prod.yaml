@@ -8,7 +8,7 @@ metadata:
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: instance
     alb.ingress.kubernetes.io/subnets: subnet-06fc444b9660f4198, subnet-0d3e7030525bffd9f
-    # alb.ingress.kubernetes.io/group.name: "snocko-app-ingress-group"
+    alb.ingress.kubernetes.io/group.name: "snocko-app-ingress-group"
     alb.ingress.kubernetes.io/healthcheck-path: "/"
 spec:
   rules:
