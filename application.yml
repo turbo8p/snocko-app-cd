@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: https://github.com/turbo8p/snocko-app-cd.git
     targetRevision: HEAD
-    path: deployment
+    path: deployment-2
     directory:
       recurse: true
   destination: 
