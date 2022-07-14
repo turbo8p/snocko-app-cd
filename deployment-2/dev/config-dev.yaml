@@ -4,4 +4,4 @@ metadata:
   name: snocko-config-map-dev
   namespace: application-dev
 data:
-  ENV:Dev
+  ENV: Dev
