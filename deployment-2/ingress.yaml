@@ -11,16 +11,6 @@ metadata:
     alb.ingress.kubernetes.io/healthcheck-path: "/"
 spec:
   rules:
-    - host: dev.turbo8p.asia
-        http:
-          paths:
-            - path: /
-              pathType: Prefix
-              backend:
-                service:
-                  name: "snocko-app-service-dev"
-                  port:
-                    number: 8080
     - host: prod.turbo8p.asia
       http:
         paths:
