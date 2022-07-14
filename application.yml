@@ -10,6 +10,8 @@ spec:
     repoURL: https://github.com/turbo8p/snocko-app-cd.git
     targetRevision: HEAD
     path: deployment
+    directory:
+      recurse: true
   destination: 
     server: https://kubernetes.default.svc
     namespace: application-common
