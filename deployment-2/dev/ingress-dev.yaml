@@ -1,7 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: "snocko-app-ingress"
+  name: "snocko-app-ingress-dev"
   namespace: "application-dev"
   annotations:
     kubernetes.io/ingress.class: alb
