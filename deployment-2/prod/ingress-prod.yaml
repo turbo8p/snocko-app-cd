@@ -1,7 +1,8 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: "snocko-app-ingress"
+  name: "snocko-app-ingress-prod"
+  namespace: application-prod
   annotations:
     kubernetes.io/ingress.class: alb
     alb.ingress.kubernetes.io/scheme: internet-facing
@@ -10,16 +11,6 @@ metadata:
     
 spec:
   rules:
-    - host: dev.turbo8p.asia
-      http:
-        paths:
-          - path: /
-            pathType: Prefix
-            backend:
-              service:
-                name: "snocko-app-service-dev"
-                port:
-                  number: 8080
     - host: prod.turbo8p.asia
       http:
         paths:
