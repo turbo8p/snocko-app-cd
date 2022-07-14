@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: snocko-app-prod
-        image: public.ecr.aws/s7j8l1f2/snocko-test:98df6222b5785414821acddea730aea6783ab570
+        image: public.ecr.aws/s7j8l1f2/snocko-test:90712b55742a4fb7dd9ffd16ad26556feb54598a
         ports:
         - containerPort: 8081
